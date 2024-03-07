@@ -11,7 +11,7 @@ function Badge({ trending }) {
                 </div>
                 <div className="flex items-center justify-between bg-[#EBF9F4] px-2 py-1 rounded w-[90px]">
                     <div className="w-0 h-0 border-b-[9px] border-b-[#14B079] border-x-[7px] border-x-transparent border-solid"></div>
-                    <p className="ml-2 font-medium text-[#14B079]">{`${parseFloat(t.item.data.price_change_percentage_24h.usd.toPrecision(3))}%`}</p>
+                    <p className="ml-2 font-medium text-[#14B079]">{`${parseFloat(t.item.data.price_change_percentage_24h.usd).toFixed(2)}%`}</p>
                 </div>
             </div>
         ))}
